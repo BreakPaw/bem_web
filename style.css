@@ -60,6 +60,7 @@ body {
   /* max-width: 1200px; */
   margin: 0 auto;
   padding: 1.5rem 0rem;
+  margin-bottom: 12rem;
 }
 
 .heroimg img {
@@ -68,10 +69,10 @@ body {
 
 section {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
+  /* align-items: center;
+  justify-content: center;
  
-  /* gap: 2rem; */
+  gap: 2rem; */
 }
 
 .journeyl {
@@ -144,6 +145,8 @@ section {
   width: 100%;
   flex-direction: column;
   align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .tagline p {
@@ -155,11 +158,12 @@ section {
 }
 
 .meetTeam {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .meetTeam .title {
   margin-bottom: 0.7rem;
+  font-weight: 700;
 }
 
 .meetTeam h1 {
@@ -173,21 +177,251 @@ section {
   line-height: 150%;
 }
 
-.profile {
-  gap: 3rem;
-  display: flex;
+.descTeam {
+  margin-bottom: 3rem;
 }
 
-.cardProfile {
-  flex: 1;
+.profile {
+  gap: 3rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
 }
+
+/* .cardProfile {
+  flex: 1;
+} */
 
 .cardProfile h6 {
   font-size: 1.25rem;
   font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .cardProfile img{
   width: 100%;
   height: 18rem;
+  margin-bottom: 1rem;
 }
+
+
+
+.divisi {
+  margin-bottom: 1rem;
+}
+
+.icon {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.recruitment {
+  margin-top: 4rem;
+}
+
+.recruitment h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.recruitment p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.recruitment button {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background: none;
+  border: 1px solid ;
+}
+
+.footer {
+  margin-top: 10rem;
+  display: flex;
+  gap: 5rem;
+}
+
+.fotleft {
+  flex: 1;
+}
+
+.fotright {
+  flex: 1;
+  display: flex;
+  /* justify-content: center; */
+  gap: 1rem;
+}
+
+.headRight {
+  flex: 1;
+}
+
+.headRight p {
+  margin-bottom: 1rem;
+}
+
+.fotTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.inputCon {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.submit {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background: none;
+  border: 1px solid ;
+}
+
+.inputfot {
+  padding: 1rem;
+  width: 60%;
+  font-weight: 400;
+  background: none;
+  border: 1px solid;
+}
+
+.descInput {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footLine {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.footLine img {
+  width: 100%;
+}
+
+.pBot {
+  flex: 1;
+}
+
+.footBar {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+  justify-content: end;
+}
+
+.footBar a {
+  text-decoration: none;
+  color: black;
+}
+
+.BottomBar {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-bottom: 3rem;
+}
+
+.arahBase {
+  display: flex;
+  gap: 2rem;
+}
+
+.leftURL {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightURL {
+  flex: 1.33;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.baseFlex {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.titleBase {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  line-height: 130%;
+}
+.titleBasetwo {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 130%;
+}
+
+.pBase {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.buttonBase {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.containerBase {
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.baseFlextwo {
+  display: flex;
+  border: 1px solid black;
+  /* gap: 2rem; */
+}
+
+.imgBase {
+  flex: 1.2;
+}
+.imgBaseRight {
+  flex: 2;
+}
+
+.descBase {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  flex: 1;
+  padding: 3rem 1.2rem;
+}
+.descBaseRight {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  flex: 0.8;
+  padding: 1rem 2rem 1.2rem 2rem;
+}
+
+.imgPlaceBase {
+  width: 100%;
+  height: 100%;
+}
+
