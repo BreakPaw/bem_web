@@ -6,6 +6,9 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  /* max-width: 1200px; */
+  margin-top: 2rem;
+  padding: 0 7%;
 }
 
 .navbar {
@@ -13,9 +16,9 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
-  padding: 1.5rem 2rem;
+  /* padding: 1.5rem 2rem; */
 }
 
 .logo {
@@ -54,9 +57,9 @@ body {
 }
 
 .heroimg {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 0rem;
 }
 
 .heroimg img {
@@ -67,9 +70,7 @@ section {
   display: flex;
   /* align-items: center; */
   /* justify-content: center; */
-  max-width: 1200px;
-  margin: 4rem auto;
-  padding: 1.5rem 2rem;
+ 
   /* gap: 2rem; */
 }
 
