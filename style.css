@@ -1,3 +1,9 @@
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +25,12 @@ body {
   /* max-width: 1200px; */
   margin: 0 auto;
   /* padding: 1.5rem 2rem; */
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .logo {
@@ -63,8 +75,10 @@ body {
   margin-bottom: 12rem;
 }
 
+
 .heroimg img {
   width: 100%;
+  border-radius: 12px;
 }
 
 section {
@@ -168,7 +182,7 @@ section {
 
 .meetTeam h1 {
   margin-bottom: 1rem;
-  
+  font-size: 3rem;
 }
 
 .meetTeam p {
@@ -179,6 +193,7 @@ section {
 
 .descTeam {
   margin-bottom: 3rem;
+  font-size: 1rem;
 }
 
 .profile {
@@ -245,6 +260,7 @@ section {
   font-weight: 400;
   background: none;
   border: 1px solid ;
+  cursor: pointer;
 }
 
 .footer {
@@ -290,14 +306,16 @@ section {
   font-weight: 400;
   background: none;
   border: 1px solid ;
+  flex: 1;
 }
 
 .inputfot {
   padding: 1rem;
-  width: 60%;
+  width: 100%;
   font-weight: 400;
   background: none;
   border: 1px solid;
+  flex: 2;
 }
 
 .descInput {
@@ -356,9 +374,9 @@ section {
 
 .baseFlex {
   display: flex;
-  gap: 1.5rem;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* width: 100%; */
+  gap: 1rem;
 }
 
 .titleBase {
@@ -390,6 +408,7 @@ section {
   margin-bottom: 1rem;
   border: 1px solid black;
   padding: 1rem;
+  flex: 1;
 }
 
 .baseFlextwo {
@@ -402,7 +421,7 @@ section {
   flex: 1.2;
 }
 .imgBaseRight {
-  flex: 2;
+  flex: 1.2;
 }
 
 .descBase {
@@ -416,7 +435,7 @@ section {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  flex: 0.8;
+  flex: 1;
   padding: 1rem 2rem 1.2rem 2rem;
 }
 
@@ -425,3 +444,13 @@ section {
   height: 100%;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}

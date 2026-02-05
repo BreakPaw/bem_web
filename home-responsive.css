@@ -1,0 +1,92 @@
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .herohead {
+    font-size: 2.5rem;
+  }
+
+  .heroimg {
+    margin-bottom: 4rem;
+  }
+
+  .herotext{
+    font-size: 1rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .journeyl h1 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .journeyl p {
+    font-size: 1rem;
+  }
+
+  /* .contentjr {
+    margin-bottom: 1rem;
+  } */
+
+  .baseFlex {
+    flex-direction: column;
+  }
+
+  .baseFlextwo {
+    flex-direction: column;
+  }
+
+  .respon {
+    margin-bottom: 2rem;
+  }
+
+  .tagline p {
+    font-size: 1.25rem;
+    padding: 0;
+  }
+
+  .cardProfile h6{
+    font-size: 1rem;
+  }
+
+  .meetTeam h1{
+    font-size: 2rem;
+  }
+
+  .profile {
+    grid-template-columns: auto;
+  }
+
+  .recruitment h1 {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .inputCon {
+    flex-direction: column;
+  }
+
+  .fotright {
+    flex-direction: column;
+  }
+
+  .BottomBar {
+    flex-direction: column;
+  }
+
+  .footBar {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}

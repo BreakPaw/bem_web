@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home-responsive.css">
 
 </head>
 
@@ -20,6 +21,9 @@
         <a href="#">About</a>
         <a href="#">Contact</a>
       </nav>
+      <div class="hamburger" id="hamburger">
+    ☰
+  </div>
     </header>
 
 
@@ -29,11 +33,11 @@
             <p class="herotext">Badan Eksekutif Mahasiswa sebagai wadah perjuangan, kolaborasi, dan pengabdian mahasiswa <br> untuk kampus dan masyarakat.</p>
             <div class="heroimg">
               <!-- <h1>tes</h1> -->
-              <img src="assets/Placeholder Image.png" alt="Hero image" loading="lazy">
+              <img  src="assets/pkkmb.webp" alt="Hero image" loading="lazy">
             </div>
         </div>
 
-        <section>
+        <section class="fade-in column">
             <div class="journeyl">
               <p>Our Story</p>
               <h1>Share your journey <br>from the beginning to now</h1>
@@ -89,14 +93,14 @@
         </section>
 
         <section>
-          <div class="tagline">
+          <div class="tagline fade-in">
             <h2>Visi Kami</h2>
             <p>BEM berkomitmen menjadi wadah pengembangan kepemimpinan, kepedulian sosial, dan keberanian bersuara bagi mahasiswa.</p>
           </div>
         </section>
         
 
-        <section class="arahBase">
+        <section class="arahBase fade-in">
           <div class="leftURL">
             <div class="baseFlex">
               <div class="containerBase">
@@ -105,7 +109,7 @@
                 <p class="pBase">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
                 <a class="buttonBase" href="">Button ></a>
               </div>
-              <div class="containerBase">
+              <div class="containerBase respon">
                 <img src="assets/Relume.png" alt="">
                 <h2 class="titleBase">Medium length section <br> heading goes here</h2>
                 <p class="pBase">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
@@ -137,7 +141,7 @@
           </div>
         </section>
 
-        <section>
+        <section class="fade-in">
           <div class="meetTeam">
             <p class="title">Pengurus BEM</p>
             <h1>Introduce the team</h1>
@@ -145,7 +149,7 @@
           </div>
         </section>
 
-        <section class="profile">
+        <section class="profile fade-in">
           <div class="cardProfile">
             <img src="assets/Placeholder Image.png" alt="">
             <h6>M Ihsan Sadik</h6>
@@ -274,7 +278,23 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script>
+      const faders = document.querySelectorAll('.fade-in');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); // animasi cuma sekali
+          }
+        });
+      }, {
+        threshold: 0.2
+      });
+
+      faders.forEach(el => observer.observe(el));
+    </script>
+
 
 </body>
 </html>
