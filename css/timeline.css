@@ -1,0 +1,198 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* max-width: 1200px; */
+  margin-top: 5rem;
+  padding: 0 7%;
+}
+
+/* .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+} */
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.navhero {
+  margin-bottom: 5rem;
+}
+
+.navhero h1 {
+  /* font-size: 3rem; */
+  font-size: clamp(1.8rem, 4vw, 3.2rem);;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 1.25rem;
+}
+
+.navhero h5 {
+  /* font-size: 1rem; */
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 1.35rem;
+}
+
+.navhero p {
+  font-size: clamp(0.95rem, 1.8vw, 1.125rem);
+  line-height: 150%;
+  /* font-size: 1.125rem; */
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.verLine {
+  display: none;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+}
+
+.cardBottom {
+  margin-top: 2rem;
+}
+
+.placeImg {
+  width: 100%;
+  /* height: 100%; */
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.imgPlace {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.subCard {
+  flex: 1;
+}
+
+.subCard h5 {
+  /* font-size: 1.5rem; */
+  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+  font-weight: 700;
+  line-height: 140%;
+}
+.subCard p {
+  /* font-size: 1rem; */
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 0.5rem;
+}
+
+.imgAsset {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.imgLine {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  align-items: center;
+}
+
+.subLine {
+  width: 100%;
+}
+
+.subCircle {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  /* .navhero h1 {
+    font-size: 2rem;
+  }
+
+  .navhero p {
+    font-size: 1rem;
+  } */
+
+  .card {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .imgAsset {
+    flex-direction: column;
+  }
+
+  .imgLine {
+    flex-direction: column;
+  }
+
+  .timeline {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  /* .subCard h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 120%;
+  } */
+
+  .subCard {
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+
+  /* .subCard p {
+    font-size: 0.8rem;
+    margin-top: 0;
+  } */
+
+  .placeImg {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .verLine {
+    display: block;
+  }
+
+  .subLine {
+    display: none;
+  }
+
+  .lineNone {
+    display: none;
+  }
+}
