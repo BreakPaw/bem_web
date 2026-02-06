@@ -1,0 +1,49 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* max-width: 1200px; */
+  margin-top: 5rem;
+  padding: 0 7%;
+}
+
+.contentBlog {
+  display: flex;
+}
+
+.leftBlog {
+  flex: 1;
+  border: 1px solid black;
+}
+
+.rightBlog {
+  flex: 1;
+  border: 1px solid black;
+
+}
+
+.content h4,h5 {
+  display: inline-block;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.headline h1 {
+  margin: 1rem 0;
+}
+
+.blog {
+  margin-top: 2rem;
+}
