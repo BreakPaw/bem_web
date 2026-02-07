@@ -217,6 +217,7 @@ section {
   width: 100%;
   height: 18rem;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 
