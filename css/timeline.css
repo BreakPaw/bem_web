@@ -86,7 +86,7 @@ body {
 .placeImg {
   width: 100%;
   /* height: 100%; */
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
   overflow: hidden;
 }
 
@@ -146,11 +146,14 @@ body {
 
   .card {
     flex-direction: column;
+    flex: 1;
     gap: 0;
   }
 
   .imgAsset {
     flex-direction: column;
+    margin: 0 0.5rem;
+    /* flex: 1; */
   }
 
   .imgLine {
@@ -159,7 +162,7 @@ body {
 
   .timeline {
     flex-direction: row;
-    gap: 1rem;
+    gap: 0;
   }
 
   /* .subCard h5 {
@@ -178,11 +181,17 @@ body {
     margin-top: 0;
   } */
 
-  .placeImg {
+  /* .placeImg {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+
+  .imgPlace {
     width: 100%;
     height: 100%;
-    
-  }
+    object-fit: cover;
+  } */
 
   .verLine {
     display: block;

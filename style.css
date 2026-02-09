@@ -285,15 +285,37 @@ section {
   flex: 1;
 }
 
-.headRight p {
+/* .headRight p {
   margin-bottom: 1rem;
-}
+} */
 
 .fotTitle {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 2rem;
 }
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.follow {
+  gap: 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.follow img {
+  /* flex: 1; */
+  width: 1rem;
+  height: 1rem;
+}
+
+/* .follow p {
+  flex: 1;
+} */
 
 .inputCon {
   display: flex;
