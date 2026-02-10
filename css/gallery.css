@@ -60,14 +60,24 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 0.5rem;
     padding: 1;
 }
 
 .card .image {
     background-color: black;
-    height: 250px;
-    border-radius: 20px 20px 0 0;
+    width: 100%;
+    /* height: 250px; */
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 0.5rem 0.5rem 0 0;
+    /* flex: 1; */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .card .description {
@@ -75,6 +85,7 @@ body {
     flex-direction: column;
     gap: 10px;
     padding: 32px;
+    /* flex: 1; */
 }
 
 .check-detail {
@@ -210,6 +221,10 @@ body {
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
+.hrefLink {
+  text-decoration: none;
+  color: black;
+}
 
 .image-gallery-section .wrapper-image-gallery .image-gallery::-webkit-scrollbar{
     display: none;
@@ -256,6 +271,10 @@ body {
     .wrapper-content .content .image-content {
         width: 100%;
         height: 250px;
+    }
+
+    .nav {
+        display: none;
     }
 }
 
